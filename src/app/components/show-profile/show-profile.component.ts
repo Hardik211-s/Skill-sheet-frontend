@@ -1,17 +1,17 @@
 import { ChangeDetectorRef, Component, ElementRef, inject, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { UserdetailService } from '../../../service/userdetail.service';
-import { AuthService } from '../../../service/auth.service';
+import { Router, RouterLink, RouterOutlet } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
 import { AbstractControl, FormControl, FormGroup, FormsModule, ReactiveFormsModule, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { catchError, throwError } from 'rxjs';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { LoaderComponent } from '../../loader/loader.component';
-import { Proficieny } from '../../../enums/proficieny';
-import { UserskillService } from '../../../service/userskill.service';
-import { LoggedUser, User } from '../../../interface/auth';
-import { UserSkillData } from '../../../interface/skill';
-import { UserDetail } from '../../../interface/dashboard';
+import { MatSnackBar } from '@angular/material/snack-bar'; 
+import { LoaderComponent } from '../../shared/loader/loader.component';
+import { UserDetail } from '../../interface/dashboard';
+import { LoggedUser } from '../../interface/auth';
+import { UserSkillData } from '../../interface/skill';
+import { UserskillService } from '../../service/userskill.service';
+import { AuthService } from '../../service/auth.service';
+import { UserdetailService } from '../../service/userdetail.service';
+import { Proficieny } from '../../shared/enums/proficieny';
 @Component({
   selector: 'app-show-profile',
   imports: [RouterLink, CommonModule, FormsModule, ReactiveFormsModule, LoaderComponent],

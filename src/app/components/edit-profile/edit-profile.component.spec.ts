@@ -1,10 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ChangeDetectorRef } from '@angular/core';
-import { of } from 'rxjs';
-import { EditProfileComponent } from './edit-profile.component';
-import { UserdetailService } from '../../../service/userdetail.service';
-import { UserDetail } from '../../../interface/userdetail';
+import { ChangeDetectorRef } from '@angular/core'; 
+import { EditProfileComponent } from './edit-profile.component'; 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { UserdetailService } from '../../service/userdetail.service';
 
 describe('EditProfileComponent', () => {
   let component: EditProfileComponent;

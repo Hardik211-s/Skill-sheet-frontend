@@ -3,10 +3,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { of, throwError } from 'rxjs';
-import { AddUserAdminComponent } from './add-user-admin.component';
-import { AuthService } from '../../../service/auth.service';
-import { RegisterUserResponse } from '../../../interface/auth';
+import { AddUserAdminComponent } from './add-user-admin.component'; 
 import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from '../../service/auth.service';
+import { RegisterUserResponse } from '../../interface/auth';
 
 describe('AddUserAdminComponent', () => {
   let component: AddUserAdminComponent;

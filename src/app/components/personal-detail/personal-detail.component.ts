@@ -4,15 +4,15 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ChartOptions, ChartType } from 'chart.js';
 import { NgChartsModule } from 'ng2-charts';
 import { catchError, throwError } from 'rxjs';
-import { UserdetailService } from '../../../service/userdetail.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { AuthService } from '../../../service/auth.service';
-import { COUNTRIES } from '../../../constants/countries';
-import { DEGREES } from '../../../constants/degrees';
-import { UserDetail, UserDetailResponse } from '../../../interface/userdetail';
-import { LoggedUser, User } from '../../../interface/auth';
-import { Gender } from '../../../enums/gender';
+import { COUNTRIES } from '../../shared/constants/countries';
+import { DEGREES } from '../../shared/constants/degrees';
+import { UserDetail } from '../../interface/userdetail';
+import { LoggedUser } from '../../interface/auth';
+import { Gender } from '../../shared/enums/gender';
+import { UserdetailService } from '../../service/userdetail.service';
+import { AuthService } from '../../service/auth.service';
 @Component({
   selector: 'app-personal-detail',
   imports: [CommonModule, FormsModule, NgChartsModule, ReactiveFormsModule],

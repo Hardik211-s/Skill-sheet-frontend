@@ -3,10 +3,10 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 import { FindUserComponent } from './find-user.component';
-import { SkilldataService } from '../../../service/skilldata.service';
-import { DashboardService } from '../../../service/dashboard.service';
-import { CategoryResponse, SkillResponse, SubCategoryResponse } from '../../../interface/skill';
-import { DashboardResponse } from '../../../interface/dashboard';
+import { SkilldataService } from '../../service/skilldata.service';
+import { DashboardService } from '../../service/dashboard.service';
+import { CategoryResponse, SkillResponse, SubCategoryResponse } from '../../interface/skill';
+import { DashboardResponse } from '../../interface/dashboard';
 
 describe('FindUserComponent', () => {
   let component: FindUserComponent;

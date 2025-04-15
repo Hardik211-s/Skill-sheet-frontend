@@ -5,8 +5,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterTestingModule } from '@angular/router/testing';
 import { of, throwError } from 'rxjs';
 import { MySkillComponent } from './my-skill.component';
-import { AuthService } from '../../../service/auth.service';
-import { UserskillService } from '../../../service/userskill.service';
+import { AuthService } from '../../service/auth.service';
+import { UserskillService } from '../../service/userskill.service';
 
 describe('MySkillComponent', () => {
   let component: MySkillComponent;

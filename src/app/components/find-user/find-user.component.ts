@@ -7,13 +7,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { catchError, throwError } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { ShowProfileComponent } from "../show-profile/show-profile.component";
-import { SkilldataService } from '../../../service/skilldata.service';
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
-import { DashboardService } from '../../../service/dashboard.service';
-import { CategoryResponse, Skill, SkillCategory, SkillResponse, SkillSubCategory, SubCategoryResponse } from '../../../interface/skill';
-import { DashboardData, DashboardResponse, MyDashboardData, UserAllData, UserDetail } from '../../../interface/dashboard';
-
+import html2canvas from 'html2canvas'; 
+import { DashboardResponse, MyDashboardData, UserDetail } from '../../interface/dashboard';
+import { CategoryResponse, Skill, SkillCategory, SkillResponse, SkillSubCategory, SubCategoryResponse } from '../../interface/skill';
+import { DashboardService } from '../../service/dashboard.service';
+import { SkilldataService } from '../../service/skilldata.service';
 @Component({
   selector: 'app-find-user',
   imports: [CommonModule, ShowProfileComponent, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatSelectModule, MatInputModule, ShowProfileComponent],

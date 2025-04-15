@@ -9,11 +9,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { catchError, throwError } from 'rxjs';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { CommonModule } from '@angular/common';
-import { AuthService } from '../../../service/auth.service';
-import { SkilldataService } from '../../../service/skilldata.service';
-import { CategoryResponse, Skill, SkillCategory, SkillResponse, SkillSubCategory, SubCategoryResponse } from '../../../interface/skill';
-import { Proficieny } from '../../../enums/proficieny';
+import { CommonModule } from '@angular/common';import { CategoryResponse, Skill, SkillCategory, SkillResponse, SkillSubCategory, SubCategoryResponse } from '../../interface/skill';
+import { Proficieny } from '../../shared/enums/proficieny';
+import { AuthService } from '../../service/auth.service';
+import { SkilldataService } from '../../service/skilldata.service';
 @Component({
   selector: 'add-skill.component',
   templateUrl: 'add-skill.component.html',
@@ -53,7 +52,7 @@ export class AddSkillComponent implements OnInit {
     secondCtrl: ['', Validators.required],
   });
   thirdFormGroup = this._formBuilder.group({
-    thirdCtrl: ['', Validators.required],
+    thirdCtrl: [[], Validators.required],
     proficiency: ['', Validators.required],
     experience: ['', Validators.required],
   });

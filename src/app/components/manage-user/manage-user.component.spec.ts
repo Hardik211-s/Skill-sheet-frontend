@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ManageUserComponent } from './manage-user.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {  HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { AuthService } from '../../../service/auth.service';
+import { AuthService } from '../../service/auth.service';
 import { of, throwError } from 'rxjs';
 
 describe('ManageUserComponent', () => {

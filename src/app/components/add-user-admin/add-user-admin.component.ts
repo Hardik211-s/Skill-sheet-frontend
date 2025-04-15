@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';  // Import Bootstrap's Toast API
-import { LoaderComponent } from '../../loader/loader.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { AuthService } from '../../../service/auth.service';
-import { AllUsersResponse, RegisterUserResponse, User } from '../../../interface/auth';
+import { LoaderComponent } from '../../shared/loader/loader.component';
+import { RegisterUserResponse, User } from '../../interface/auth';
+import { AuthService } from '../../service/auth.service';
 
 export interface UserData {
   role: string | null | undefined;

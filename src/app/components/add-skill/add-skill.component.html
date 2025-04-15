@@ -53,7 +53,7 @@
                                 <ng-template matStepLabel>Fill out your skill</ng-template>
                                 <mat-form-field style="width:300px; background-color: #fff;">
                                     <mat-label>Skill</mat-label>
-                                    <mat-select formControlName="thirdCtrl" panelClass="example-panel-Red" multiple>
+                                    <mat-select formControlName="thirdCtrl" panelClass="example-panel-Red" >
 
                                         @for (skill of skills; track skill) {
                                         <mat-option [value]="skill.skillId"><i class="{{skill.iconName}}"> </i>

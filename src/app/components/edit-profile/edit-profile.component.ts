@@ -1,9 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { UserdetailService } from '../../../service/userdetail.service';
-import { PersonalDetailComponent } from '../personal-detail/personal-detail.component';
-import { User } from '../../../interface/auth';
-import { UserDetail } from '../../../interface/userdetail';
+import { PersonalDetailComponent } from '../personal-detail/personal-detail.component'; 
+import { UserDetail } from '../../interface/userdetail';
+import { UserdetailService } from '../../service/userdetail.service';
 
 @Component({
   selector: 'app-edit-profile',

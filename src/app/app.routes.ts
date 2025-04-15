@@ -2,15 +2,15 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { LoginComponent } from './features/login/login.component'; 
 import { NavbarComponent } from './shared/common/navbar/navbar.component';
-import { AddUserAdminComponent } from './shared/components/add-user-admin/add-user-admin.component';
-import { ManageUserComponent } from './shared/components/manage-user/manage-user.component';
-import { DeniedAccessComponent } from './shared/components/denied-access/denied-access.component';
-import { EditProfileComponent } from './shared/components/edit-profile/edit-profile.component';
-import { AddSkillComponent } from './shared/components/add-skill/add-skill.component';
-import { MySkillComponent } from './shared/components/my-skill/my-skill.component';
-import { ShowProfileComponent } from './shared/components/show-profile/show-profile.component';
-import { PersonalDetailComponent } from './shared/components/personal-detail/personal-detail.component';
-import { FindUserComponent } from './shared/components/find-user/find-user.component';
+import { AddUserAdminComponent } from './components/add-user-admin/add-user-admin.component';
+import { ManageUserComponent } from './components/manage-user/manage-user.component';
+import { DeniedAccessComponent } from './components/denied-access/denied-access.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { AddSkillComponent } from './components/add-skill/add-skill.component';
+import { MySkillComponent } from './components/my-skill/my-skill.component';
+import { ShowProfileComponent } from './components/show-profile/show-profile.component';
+import { PersonalDetailComponent } from './components/personal-detail/personal-detail.component';
+import { FindUserComponent } from './components/find-user/find-user.component';
 import { RoleGuard } from './core/role.guard';
 
 export const routes: Routes = [ 

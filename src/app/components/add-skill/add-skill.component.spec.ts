@@ -4,9 +4,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 import { AddSkillComponent } from './add-skill.component';
-import { SkilldataService } from '../../../service/skilldata.service';
-import { AuthService } from '../../../service/auth.service';
-import { CategoryResponse, SubCategoryResponse, SkillResponse } from '../../../interface/skill';
+import { SkilldataService } from '../../service/skilldata.service';
+import { AuthService } from '../../service/auth.service';
+import { CategoryResponse, SkillResponse, SubCategoryResponse } from '../../interface/skill';
 
 describe('AddSkillComponent', () => {
   let component: AddSkillComponent;

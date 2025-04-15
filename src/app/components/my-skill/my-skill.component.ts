@@ -3,10 +3,10 @@ import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core'
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { catchError, throwError } from 'rxjs';
-import { AuthService } from '../../../service/auth.service';
-import { Router, RouterLink } from '@angular/router';
-import { UserskillService } from '../../../service/userskill.service';
-import { UserSkillData } from '../../../interface/skill'; 
+import { Router, RouterLink } from '@angular/router'; 
+import { UserSkillData } from '../../interface/skill';
+import { AuthService } from '../../service/auth.service';
+import { UserskillService } from '../../service/userskill.service';
 
 @Component({
   selector: 'app-my-skill',
@@ -50,6 +50,12 @@ export class MySkillComponent implements OnInit {
     ).subscribe((res:any) => {
       this.userSkill = res.userSkill;
     })
+    this.editUserForm.get('proficiency')?.setValue('');  
+    this.editUserForm.get('experience')?.setValue('');  
+    this.editUserForm.get('experience')?.markAsUntouched();
+    // this.editUserForm.get('proficiency')?.markAsUntouched ;
+    // this.editUserForm.get('experience')?.markAsPristine;
+    this.editUserForm.markAsUntouched();
   }
 
   get filteredUsers() {
@@ -86,8 +92,8 @@ export class MySkillComponent implements OnInit {
         horizontalPosition: "right",
         verticalPosition: 'bottom',
       });
+      this.ngOnInit()
     })
-    this.ngOnInit()
     if (this.closeModal) {
       this.closeModal.nativeElement.click();
     }

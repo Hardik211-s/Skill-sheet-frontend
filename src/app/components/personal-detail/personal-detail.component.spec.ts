@@ -5,8 +5,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
 import { PersonalDetailComponent } from './personal-detail.component';
-import { UserdetailService } from '../../../service/userdetail.service';
-import { AuthService } from '../../../service/auth.service';
+import { UserdetailService } from '../../service/userdetail.service';
+import { AuthService } from '../../service/auth.service';
 import { Router } from '@angular/router';
 
 describe('PersonalDetailComponent - Constructor Mocking', () => {

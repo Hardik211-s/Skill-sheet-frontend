@@ -1,11 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ReactiveFormsModule } from '@angular/forms';
-import { of, throwError } from 'rxjs';
+import { of } from 'rxjs';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardService } from '../../service/dashboard.service';
 import { ChangeDetectorRef } from '@angular/core';
-import { Chart } from 'chart.js';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;

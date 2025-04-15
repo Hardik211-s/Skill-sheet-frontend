@@ -4,7 +4,7 @@ import {  Router, RouterLink, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../../../service/auth.service';
-import { NAV_ITEMS } from '../../../constants/nav-items';
+import { NAV_ITEMS } from '../../constants/nav-items';
 
 @Component({
   selector: 'app-main',

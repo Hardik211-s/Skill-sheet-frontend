@@ -7,13 +7,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { LoaderComponent } from '../../loader/loader.component';
-import { AuthService } from '../../../service/auth.service';
 import 'datatables.net';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {  MatTableModule } from '@angular/material/table';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { AllUsersResponse, User } from '../../../interface/auth';
+import { LoaderComponent } from '../../shared/loader/loader.component';
+import { AllUsersResponse, User } from '../../interface/auth';
+import { AuthService } from '../../service/auth.service';
 
 
 export interface PeriodicElement {

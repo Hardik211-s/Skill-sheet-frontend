@@ -5,9 +5,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterTestingModule } from '@angular/router/testing';
 import { of, throwError } from 'rxjs';
 import { ShowProfileComponent } from './show-profile.component';
-import { UserskillService } from '../../../service/userskill.service';
-import { UserdetailService } from '../../../service/userdetail.service';
-import { AuthService } from '../../../service/auth.service';
+import { UserskillService } from '../../service/userskill.service';
+import { UserdetailService } from '../../service/userdetail.service';
+import { AuthService } from '../../service/auth.service';
 import { ChangeDetectorRef, ElementRef } from '@angular/core';
 
 describe('ShowProfileComponent', () => {

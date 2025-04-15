@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
 import { MainComponent } from './main.component';
 import { AuthService } from '../../../service/auth.service';
-import { NAV_ITEMS } from '../../../constants/nav-items';
+import { NAV_ITEMS } from '../../constants/nav-items';
 import { ChangeDetectorRef } from '@angular/core';
 
 describe('MainComponent', () => {
